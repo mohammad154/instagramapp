@@ -1,24 +1,22 @@
 {% extends 'base.html' %}
 {% block content %}
-{% load static %}
-<div class="index-background">
+    {% load static %}
+    <div class="index-background">
 
-    <div class="container mt-5">
-        <div class="decorator">
-            <h1>
-                Cruffy <img src="{% static 'imgs/logo.png' %}" class = "index-logo" alt="">
-            </h1>
-            <p>
-                <b>Cruffy</b> is an exciting platform which allows you to show your creativity to the world. 
-                Share your own thougts and and ideas with your followers and get to know what others are feeling.
-                Cruffy is completely free and there are no adds. Join now!
-            </p>
-            <a href="{% url 'signup' %}" class="button-index mt-3">
-                Get Started &nbsp;<i class="bi bi-arrow-right-circle-fill"></i>
-            </a>
+        <div class="container mt-5">
+            <div class="decorator">
+                <h1>
+                    Instagram Social Network
+                </h1>
+                <p>
+                    <b>Instagram</b> This project is a simple and small social media platform called Instagram
+                </p>
+                <a href="{% url 'signup' %}" class="button-index mt-3">
+                    Get Started &nbsp;<i class="bi bi-arrow-right-circle-fill"></i>
+                </a>
+            </div>
         </div>
-    </div>
 
-</div>
+    </div>
 
 {% endblock %}
